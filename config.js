@@ -7,4 +7,5 @@ module.exports = {
     { title: "Email", url: "mailto:chunqiuyiyu@outlook.com" },
     { title: "RSS", url: "/feed.xml" },
   ],
+  count: ``,
 };

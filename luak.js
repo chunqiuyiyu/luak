@@ -170,6 +170,7 @@ function build() {
       site_title: config.title,
       subtitle: config.subtitle || "",
       nav,
+      count: config.count || "",
     });
     fs.writeFileSync(`public/${post.filename}`, html, "utf-8");
     console.log(`  -> ${post.filename}`);
@@ -222,6 +223,7 @@ function build() {
     post_count: posts.length,
     build_time: buildTime,
     build_duration: elapsed,
+    count: config.count || "",
   });
   fs.writeFileSync("public/index.html", indexHtml, "utf-8");
   console.log("  -> index.html");
