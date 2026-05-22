@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title><%= title %></title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+<div>
+<h1><%= title %></h1>
+<p><%= subtitle %></p>
+</div>
+<div><%- links_section %></div>
+</header>
+<main>
+<p class="intro">一位前端开发工程师，爱好编程、阅读与电子游戏。</p>
+<p class="search-hint">
+<kbd>Ctrl</kbd>+<kbd>F</kbd> 搜索文章标题&ensp;或&ensp;<input type="search" placeholder="搜索引擎搜索" maxlength="10" onchange="location.href='https://www.google.com/search?q=site%3Awww.chunqiuyiyu.com+'+ this.value">
+</p>
+<h2>Posts (<%= post_count %>)</h2>
+<%- posts %>
+</main>
+<footer>
+<p>&copy; 2013-2026 <%= title %></p>
+<p><small>Built with <a href="https://github.com/chunqiuyiyu/luak">luak</a> at <%= build_time %> (took <%= build_duration %>s)</small></p>
+</footer>
+</body>
+</html>

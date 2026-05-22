@@ -1,0 +1,9 @@
+{
+  "name": "luak",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "marked": "^15.0.0",
+    "ejs": "^3.1.10"
+  }
+}
