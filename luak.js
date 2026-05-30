@@ -168,6 +168,7 @@ function build() {
       date: post.date,
       content: post.content,
       site_title: config.title,
+      description: config.description || "",
       subtitle: config.subtitle || "",
       nav,
       count: config.count || "",
@@ -217,6 +218,7 @@ function build() {
 
   const indexHtml = renderIndex({
     title: config.title,
+    description: config.description || "",
     subtitle: config.subtitle || "",
     posts: yearGroups.join("\n"),
     links_section: linksHtml,
